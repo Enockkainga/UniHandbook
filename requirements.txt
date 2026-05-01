@@ -1,0 +1,43 @@
+# University Handbook Assistant - Dependencies
+# =============================================
+# Install with: pip install -r requirements.txt
+
+# Core LangChain packages
+langchain>=0.1.0
+langchain-community>=0.0.10
+langchain-core>=0.1.0
+
+# Document loaders (handbooks are usually PDF, DOCX, HTML, or Markdown)
+langchain[docstore]
+pypdf>=3.0.0
+python-docx>=1.1.0
+unstructured>=0.12.0
+markdown>=3.5.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Embeddings and vector stores
+sentence-transformers>=2.2.0
+chromadb>=0.4.0
+faiss-cpu>=1.7.0
+
+# LLMs - install at least one
+# Local LLM (recommended for students; private — handbook stays on your machine)
+ollama>=0.1.0
+# OpenAI (optional — requires API key)
+# openai>=1.0.0
+# HuggingFace (optional)
+# huggingface-hub>=0.19.0
+
+# Text processing
+python-dotenv>=1.0.0
+tiktoken>=0.5.0
+numpy>=1.24.0
+
+# Optional: Evaluation
+# ragas>=0.0.20
+# deepeval>=0.1.0
+
+# For Jupyter notebooks / experimentation
+jupyter>=1.0.0
+ipykernel>=6.0.0
